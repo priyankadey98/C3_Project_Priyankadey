@@ -74,6 +74,17 @@ class RestaurantTest {
                 () -> restaurant.removeFromMenu("French fries"));
     }
     //<<<<<<<<<<<<<<<<<<<<<<<MENU>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
-    
+
+    //<<<<<<<<<<<<<<<<<<<<<Calculating Total Cost>>>>>>>>>>>>>>>>>>>>>
+    @Test
+    public void calculating_total_cost_of_items_which_fails() {
+        List<Item> selectedItems = null;
+        Item item1 = new Item("Samosa", 15);
+        Item item2 = new Item("Chicken Manchurian", 225);
+        selectedItems.add(item1);
+        selectedItems.add(item2);
+
+    }
+
 
 }
