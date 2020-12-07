@@ -86,5 +86,14 @@ class RestaurantTest {
 
     }
 
+    @Test
+    public void calculating_the_total_cost_of_selected_items() {
+
+        List<Item> menu = restaurant.getMenu();
+        int totalCost = 388;
+        int actualTotalCost = restaurant.displayTotalPrice(menu);
+        assertEquals(totalCost, actualTotalCost);
+    }
+
 
 }
